@@ -1,0 +1,162 @@
+import React, { useState } from 'react';
+import {
+	FaBriefcase,
+	FaFileCode,
+	FaHome,
+	FaUser,
+	FaYinYang,
+	FaRegPaperPlane,
+	FaBars,
+} from 'react-icons/fa';
+import { Box, Flex, IconButton, Link, Icon } from '@chakra-ui/react';
+import { ColorModeSwitcher } from './ColorModeSwitcher';
+
+const NavigationBar: React.FC = () => {
+	const [isOpen, setOpen] = useState(false);
+
+	const handleShowMenu = (): void => {
+		setOpen(!isOpen);
+	};
+	return (
+		<>
+			<Box
+				as="header"
+				w="100%"
+				pos="fixed"
+				bottom={[0, null, 'initial']}
+				// top={[null, null, '0']}
+				// left={[null, null, '0']}
+				// zIndex="1000"
+				p={{ base: '0 1rem', md: '0 2rem' }}
+				columnGap={[null, null, '1rem']}
+				justifyContent={{ md: 'center' }}
+				display={{ md: 'flex' }}
+				// mx={{ md: '1.5rem' }}
+			>
+				<Flex
+					as="nav"
+					alignItems="center"
+					justifyContent="space-between"
+					h={['3rem', null, '4rem']}
+					columnGap={{ md: '1rem' }}
+					w={{ base: '100%', lg: '80%' }}
+				>
+					<Link
+						_hover={{ color: 'brand.primary' }}
+						href="#home"
+						fontSize="2xl"
+						fontWeight="bold"
+					>
+						siaw.dev
+					</Link>
+					<Flex
+						// position={['fixed', '', null, null]}
+						pos={{ base: 'fixed', md: 'unset' }}
+						bottom={isOpen ? 0 : '-100%'}
+						left="0"
+						width="100%"
+						p={['2rem 1.5rem 4rem', null, '0rem']}
+						boxShadow={{ base: '0 -1px 4px rgba(0,0,0,.15)', md: 'none' }}
+						borderRadius={{ base: '1.5rem 1.5rem 0 0', md: '0' }}
+						transition="0.3s"
+						alignItems="center"
+						ml={[null, null, 'auto']}
+						// justifyContent="center"
+					>
+						<Box
+							as="ul"
+							listStyleType="none"
+							w="100%"
+							display={['grid', null, 'flex']}
+							gridTemplateColumns="repeat(3,1fr)"
+							gap={['1.5rem', null, '2rem']}
+							justifyContent={{ md: 'end' }}
+						>
+							<Box as="li">
+								<Link
+									layerStyle="navLinkStyles"
+									_hover={{ color: 'brand.primary' }}
+								>
+									<Icon as={FaHome} display={{ md: 'none' }} />
+									Home
+								</Link>
+							</Box>
+
+							<Box as="li">
+								<Link
+									layerStyle="navLinkStyles"
+									_hover={{ color: 'brand.primary' }}
+								>
+									<Icon as={FaUser} display={{ md: 'none' }} />
+									About
+								</Link>
+							</Box>
+
+							<Box as="li">
+								<Link
+									layerStyle="navLinkStyles"
+									_hover={{ color: 'brand.primary' }}
+								>
+									<Icon as={FaFileCode} display={{ md: 'none' }} />
+									Skills
+								</Link>
+							</Box>
+
+							<Box as="li">
+								<Link
+									layerStyle="navLinkStyles"
+									_hover={{ color: 'brand.primary' }}
+								>
+									<Icon as={FaBriefcase} display={{ md: 'none' }} />
+									Services
+								</Link>
+							</Box>
+
+							<Box as="li">
+								<Link
+									layerStyle="navLinkStyles"
+									_hover={{ color: 'brand.primary' }}
+								>
+									<Icon as={FaYinYang} display={{ md: 'none' }} />
+									Portfolio
+								</Link>
+							</Box>
+
+							<Box as="li">
+								{/*<Link _hover={{ color: 'brand.primary' }} alignItems="center" href="#contact" display= 'flex' flexDir='column'>*/}
+								<Link
+									layerStyle="navLinkStyles"
+									_hover={{ color: 'brand.primary' }}
+								>
+									<FaRegPaperPlane />
+									Contactme
+								</Link>
+							</Box>
+						</Box>
+					</Flex>
+					{/*<IconButton position='absolute' bottom='0.5rem' right='1.3rem'  icon={<FaTimes />} aria-label='Close Button' onClick={handleShowMenu} />*/}
+					<Flex alignItems="center">
+						{/* Theme change btn */}
+						<ColorModeSwitcher
+							aria-label="Toggle theme"
+							fontSize="1.25rem"
+							mb="1"
+						/>
+						<IconButton
+							aria-label="Toggle menu"
+							icon={<FaBars />}
+							onClick={handleShowMenu}
+							// fontSize="1.25rem"
+							mb="1"
+							variant="unstyled"
+							display="flex"
+							justifyContent="center"
+						/>
+					</Flex>
+				</Flex>
+			</Box>
+		</>
+	);
+};
+
+export default NavigationBar;
