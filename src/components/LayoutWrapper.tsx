@@ -6,7 +6,10 @@ interface LayoutProps {
 }
 export const LayoutWrapper = ({ children }: LayoutProps) => {
 	return (
-		<Box ml="1.5rem" mr="1.5rem" maxW="767px">
+		<Box
+			margin="0 auto"
+			// maxW={['767px', '1024px', '1400px']}
+		>
 			{children}
 		</Box>
 	);
