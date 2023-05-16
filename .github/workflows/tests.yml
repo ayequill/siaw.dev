@@ -25,5 +25,5 @@ jobs: # list of things to do
       - name: Install Dependencies
         run: npm ci
 
-      - name: Code Linting
+      - name: App Testing
         run: npm test
