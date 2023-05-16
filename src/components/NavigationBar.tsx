@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, FC } from 'react';
 import {
 	FaBriefcase,
 	FaFileCode,
@@ -11,7 +11,7 @@ import {
 import { Box, Flex, IconButton, Link, Icon } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
-const NavigationBar: React.FC = () => {
+const NavigationBar: FC = () => {
 	const [isOpen, setOpen] = useState(false);
 
 	const handleShowMenu = (): void => {
