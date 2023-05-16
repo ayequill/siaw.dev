@@ -49,6 +49,8 @@ const NavigationBar: React.FC = () => {
 					siaw.dev
 				</Link>
 				<Flex
+					role="menu"
+					aria-expanded={isOpen}
 					// position={['fixed', '', null, null]}
 					pos={{ base: 'fixed', md: 'unset' }}
 					bottom={isOpen ? 0 : '-100%'}
