@@ -1,5 +1,4 @@
 build
-/src/App.test.tsx
 /src/setupTests.ts
 /src/serviceWorker.ts
 /src/test-utils.tsx

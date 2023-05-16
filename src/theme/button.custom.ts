@@ -9,6 +9,7 @@ const brandPrimary = defineStyle({
 	borderRadius: '0.5rem',
 	padding: '1rem',
 	columnGap: '.3rem',
+	_hover: { textDecoration: 'none', bgColor: 'brand.primary' },
 	alignItems: 'center',
 
 	// let's also provide dark mode alternatives

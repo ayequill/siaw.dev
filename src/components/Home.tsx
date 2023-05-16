@@ -1,6 +1,12 @@
-import { Box, Grid, Heading, Link, Text } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import CustomButton from './Button';
+import { Box, Grid, Heading, Icon, Link, Text } from '@chakra-ui/react';
+import {
+	FaArrowDown,
+	FaGithub,
+	FaLinkedin,
+	FaMouse,
+	FaPaperPlane,
+	FaTwitter,
+} from 'react-icons/fa';
 
 export const Home = () => {
 	return (
@@ -10,11 +16,7 @@ export const Home = () => {
 			layerStyle="sectionStyles"
 			gap={{ base: '1rem' }}
 		>
-			<Grid
-				rowGap={{ md: '5rem' }}
-				layerStyle="wrapper"
-				border="3px black solid"
-			>
+			<Grid rowGap={{ md: '5rem' }} layerStyle="wrapper" gap="1rem">
 				<Grid
 					pt={{ base: '2.5rem', lg: '5.5rem' }}
 					columnGap={{ lg: 8 }}
@@ -31,6 +33,7 @@ export const Home = () => {
 							href="https://www.linkedin.com/in/nicholas-siaw-8824a6175/"
 							rel="noreferrer"
 							target="_blank"
+							isExternal
 						>
 							{<FaLinkedin size="1.5rem" />}
 						</Link>
@@ -39,14 +42,16 @@ export const Home = () => {
 							href="https://www.twitter.com/ayequill"
 							target="_blank"
 							rel="noreferrer"
+							isExternal
 						>
 							{<FaTwitter size="1.5rem" />}
 						</Link>
 						<Link
 							color="brand.primary"
-							href="http://github.com/ayequill"
+							href="https://github.com/ayequill"
 							target="_blank"
 							rel="noreferrer"
+							isExternal
 						>
 							{<FaGithub size="1.5rem" />}
 						</Link>
@@ -61,15 +66,47 @@ export const Home = () => {
 							High level experience in web design and development knowledge,
 							producing quality work.
 						</Text>
-						<CustomButton
+						<Link
 							variant="brandPrimary"
 							href="#contact"
-							label="Contact Me"
-						/>
+							// icon={<FaPaperPlane />}
+							// _hover={{ textDecoration: 'none' }}
+						>
+							Contact Me
+							<Icon ml={1} as={FaPaperPlane} />
+						</Link>
 					</Box>
 				</Grid>
 				<Box>
-					<a href="#about">Scroll down</a>
+					<Link
+						href="#about"
+						display="inline-flex"
+						alignItems="center"
+						columnGap="0.3em"
+						transition=".3s"
+						_hover={{ textDecoration: 'none' }}
+					>
+						<Icon
+							// _hover={{ transform: 'translateY(0.25rem)' }}
+							color="brand.primary"
+							mr={1}
+							fontSize="1.5rem"
+							as={FaMouse}
+						/>
+						<Box as="span" fontSize="sm">
+							Scroll down
+						</Box>
+						<Icon
+							fontSize="1.5rem"
+							color="brand.primary"
+							ml={1}
+							as={FaArrowDown}
+							_hover={{
+								transform: 'translateY(0.25rem)',
+								textDecoration: 'none',
+							}}
+						/>
+					</Link>
 				</Box>
 			</Grid>
 		</Grid>
