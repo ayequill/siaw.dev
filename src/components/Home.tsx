@@ -1,4 +1,4 @@
-import { Box, Grid, Heading, Icon, Link, Text, Button } from '@chakra-ui/react';
+import { Box, Grid, Heading, Link, Text } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import CustomButton from './Button';
 
