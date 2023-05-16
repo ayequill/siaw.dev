@@ -9,8 +9,7 @@ type CustomButtonProps = LinkProps & {
 
 function CustomButton({ label, icon, link }: CustomButtonProps) {
 	return (
-		<Link aria-label={label}>
-			{link}
+		<Link aria-label={label} href={link}>
 			{icon}
 		</Link>
 	);
