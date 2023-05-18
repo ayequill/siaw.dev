@@ -30,6 +30,7 @@ const NavigationBar: FC = () => {
 			columnGap={[null, null, '1rem']}
 			justifyContent={{ md: 'center' }}
 			display={{ md: 'flex' }}
+			bgColor="brand.bodyColor"
 			// mx={{ md: '1.5rem' }}
 		>
 			<Flex
@@ -61,6 +62,7 @@ const NavigationBar: FC = () => {
 					borderRadius={{ base: '1.5rem 1.5rem 0 0', md: '0' }}
 					transition="0.3s"
 					alignItems="center"
+					bgColor="brand.bodyColor"
 					ml={[null, null, 'auto']}
 					// justifyContent="center"
 				>
