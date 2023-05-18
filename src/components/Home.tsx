@@ -62,7 +62,7 @@ export const Home = () => {
 						<Text color="brand.text" mb={3.5}>
 							Frontend Developer
 						</Text>
-						<Text mb={8}>
+						<Text mb={8} color="brand.text">
 							High level experience in web design and development knowledge,
 							producing quality work.
 						</Text>
