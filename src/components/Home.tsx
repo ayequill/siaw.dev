@@ -58,7 +58,12 @@ export const Home = () => {
 					</Grid>
 					<Box w="260px" h="260"></Box>
 					<Box gridColumn={{ base: '1/3', md: 'initial' }}>
-						<Heading>Siaw A. Nicholas</Heading>
+						<Heading
+							bgGradient="linear(to-l, brand.primary, brand.primaryDark)"
+							bgClip="text"
+						>
+							Siaw A. Nicholas
+						</Heading>
 						<Text color="brand.text" mb={3.5}>
 							Frontend Developer
 						</Text>
