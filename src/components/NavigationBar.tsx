@@ -56,7 +56,7 @@ const NavigationBar: FC = () => {
 					href="#home"
 					fontSize="2xl"
 					fontWeight="bold"
-					bgGradient="linear(to-l, brand.primary, brand.primaryDark)"
+					// bgGradient="linear(to-l, brand.primary, brand.primaryDark)"
 					bgClip="text"
 				>
 					siaw.dev

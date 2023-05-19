@@ -11,7 +11,7 @@ const brandPrimary = defineStyle({
 	columnGap: '.3rem',
 	_hover: { textDecoration: 'none', bgColor: 'brand.primary' },
 	alignItems: 'center',
-
+	boxShadow: 'lg',
 	// let's also provide dark mode alternatives
 	// _dark: {
 	// 	color: 'orange.800',
