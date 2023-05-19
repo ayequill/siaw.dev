@@ -8,11 +8,20 @@ import {
 	FaRegPaperPlane,
 	FaBars,
 } from 'react-icons/fa';
-import { Box, Flex, IconButton, Link, Icon } from '@chakra-ui/react';
+import {
+	Box,
+	Flex,
+	IconButton,
+	Link,
+	Icon,
+	useColorModeValue,
+} from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
 const NavigationBar: FC = () => {
 	const [isOpen, setOpen] = useState(false);
+
+	const navBg = useColorModeValue('brand.bodyColor', 'black');
 
 	const handleShowMenu = (): void => {
 		setOpen(!isOpen);
@@ -25,12 +34,13 @@ const NavigationBar: FC = () => {
 			bottom={[0, null, 'initial']}
 			// top={[null, null, '0']}
 			// left={[null, null, '0']}
-			// zIndex="1000"
-			p={{ base: '0 1rem', md: '0 2rem' }}
+			zIndex="1000"
+			p={{ base: '0.4rem 1rem', md: '0 2rem' }}
 			columnGap={[null, null, '1rem']}
 			justifyContent={{ md: 'center' }}
 			display={{ md: 'flex' }}
-			bgColor="brand.bodyColor"
+			bgColor={navBg}
+			boxShadow="inner"
 			// mx={{ md: '1.5rem' }}
 		>
 			<Flex
@@ -46,6 +56,8 @@ const NavigationBar: FC = () => {
 					href="#home"
 					fontSize="2xl"
 					fontWeight="bold"
+					// bgGradient="linear(to-l, brand.primary, brand.primaryDark)"
+					bgClip="text"
 				>
 					siaw.dev
 				</Link>
@@ -62,7 +74,7 @@ const NavigationBar: FC = () => {
 					borderRadius={{ base: '1.5rem 1.5rem 0 0', md: '0' }}
 					transition="0.3s"
 					alignItems="center"
-					bgColor="brand.bodyColor"
+					bgColor={navBg}
 					ml={[null, null, 'auto']}
 					// justifyContent="center"
 				>

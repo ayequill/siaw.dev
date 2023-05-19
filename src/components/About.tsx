@@ -51,7 +51,7 @@ export default function About() {
 					<Box>
 						{/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
 						<Link variant="brandPrimary" download="Siaw's CV" href={cv}>
-							<Box
+							{/* <Box
 								display="inline-flex"
 								alignItems="center"
 								px={4}
@@ -61,10 +61,10 @@ export default function About() {
 								bg="blue.500"
 								borderRadius="md"
 								_hover={{ bg: 'blue.600' }}
-							>
-								Download CV
-								<Icon as={FaCloudDownloadAlt} ml={2} />
-							</Box>
+							> */}
+							Download CV
+							<Icon fontSize="xl" as={FaCloudDownloadAlt} ml={2} />
+							{/* </Box> */}
 						</Link>
 					</Box>
 				</Box>

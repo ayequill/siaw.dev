@@ -4,14 +4,14 @@ const brandPrimary = defineStyle({
 	display: 'inline-flex',
 	textDecoration: 'none',
 	color: 'white',
-	fontWeight: '500',
-	bgColor: 'brand.primary',
+	fontWeight: 'bold',
+	bg: 'brand.linear',
 	borderRadius: '0.5rem',
 	padding: '1rem',
 	columnGap: '.3rem',
 	_hover: { textDecoration: 'none', bgColor: 'brand.primary' },
 	alignItems: 'center',
-
+	boxShadow: 'lg',
 	// let's also provide dark mode alternatives
 	// _dark: {
 	// 	color: 'orange.800',
