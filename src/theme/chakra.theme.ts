@@ -34,9 +34,14 @@ export const theme = extendTheme({
 			flexDir: 'column',
 		},
 		sectionStyles: {
-			padding: { base: '2rem 0 4rem', md: '6rem 0 2rem', lg: '3rem 6rem' },
-			marginBottom: { md: '3rem' },
+			padding: { base: '2rem 0 4rem', md: '3rem 6rem', lg: '3rem 6rem' },
+			marginBottom: { md: '3rem', lg: '3rem' },
 			minH: { lg: '80vmin' },
+			marginX: ['1.5rem', 'auto'],
+		},
+		pages: {
+			gap: '1.5em',
+			columnGap: { lg: '10rem' },
 		},
 		wrapper: {
 			// marginX: { base: '1.5rem', md: 'auto' },
