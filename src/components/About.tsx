@@ -1,4 +1,13 @@
-import { Box, Grid, Heading, Icon, Text, Link, Image } from '@chakra-ui/react';
+import {
+	Box,
+	Grid,
+	Heading,
+	Icon,
+	Text,
+	Link,
+	Image,
+	Flex,
+} from '@chakra-ui/react';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
 import avatar from '../assets/me.jpeg';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -8,40 +17,72 @@ import cv from '../assets/docs/cv.pdf';
 export default function About() {
 	return (
 		<Box id="about" as="section" layerStyle="sectionStyles" px="1rem">
-			<Heading mb={4} fontSize="4xl">
+			<Heading fontSize={['1.5rem', '2rem']} textAlign="center">
 				About me
 			</Heading>
-			<Text as="span" fontSize="xl" mb={8}>
+			<Text fontSize="xl" mb={[12, 16]} textAlign="center">
 				My Introduction
 			</Text>
 			{/*ABout Container*/}
-			<Grid templateColumns="repeat(auto-fit, minmax(200px, 1fr))" gap={8}>
-				<Box>
-					<Image w={{ base: '200px', md: '300px' }} src={avatar} alt="" />
-				</Box>
+			<Grid
+				templateColumns={[null, 'repeat(2, 1fr)']}
+				layerStyle="wrapper"
+				gap={['1.5rem', '0 5rem', '0 10rem']}
+			>
+				<Image
+					w={{ base: '200px', md: '300px' }}
+					src={avatar}
+					alt="Siaw Pic"
+					alignSelf="center"
+					borderRadius="md"
+					justifySelf="center"
+					filter="drop-shadow(0 1px 2px #121212)"
+				/>
 				{/*About Data*/}
 				<Box>
-					<Text mb={4}>
+					<Text mb={10} textAlign={['center', null, 'left']}>
 						Hello my name is Siaw Nicholas, A Web developer with extensive
 						knowledge and years of experience, working in web technologies and
 						Ui / Ux design, delivering quality work.
 					</Text>
 					{/*About Info*/}
-					<Grid templateColumns="repeat(3, 1fr)" gap={4} mb={8}>
+					<Grid
+						templateColumns="repeat(3, 1fr)"
+						rowGap={8}
+						mb={10}
+						alignContent="space-evenly"
+						justifyContent={[null, null, 'space-between']}
+						textAlign="center"
+					>
 						<Box>
-							<Text fontSize="2xl" fontWeight="bold" mb={2}>
+							<Text
+								fontSize="2xl"
+								fontWeight="bold"
+								mb={2}
+								color="brand.primary"
+							>
 								1
 							</Text>
 							<Text fontSize="lg">Year experience</Text>
 						</Box>
 						<Box>
-							<Text fontSize="2xl" fontWeight="bold" mb={2}>
+							<Text
+								fontSize="2xl"
+								fontWeight="bold"
+								mb={2}
+								color="brand.primary"
+							>
 								5+
 							</Text>
 							<Text fontSize="lg">Completed project</Text>
 						</Box>
 						<Box>
-							<Text fontSize="2xl" fontWeight="bold" mb={2}>
+							<Text
+								fontSize="2xl"
+								fontWeight="bold"
+								mb={2}
+								color="brand.primary"
+							>
 								4+
 							</Text>
 							<Text fontSize="lg">Companies worked</Text>
@@ -49,23 +90,13 @@ export default function About() {
 					</Grid>
 					{/*About Buttons*/}
 					<Box>
-						{/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-						<Link variant="brandPrimary" download="Siaw's CV" href={cv}>
-							{/* <Box
-								display="inline-flex"
-								alignItems="center"
-								px={4}
-								py={2}
-								color="white"
-								fontWeight="semibold"
-								bg="blue.500"
-								borderRadius="md"
-								_hover={{ bg: 'blue.600' }}
-							> */}
-							Download CV
-							<Icon fontSize="xl" as={FaCloudDownloadAlt} ml={2} />
-							{/* </Box> */}
-						</Link>
+						<Flex justifyContent={['center', null, 'normal']}>
+							{/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
+							<Link variant="brandPrimary" download="Siaw's CV" href={cv}>
+								Download CV
+								<Icon fontSize="xl" as={FaCloudDownloadAlt} ml={2} />
+							</Link>
+						</Flex>
 					</Box>
 				</Box>
 			</Grid>
