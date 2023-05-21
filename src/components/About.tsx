@@ -16,7 +16,7 @@ import cv from '../assets/docs/cv.pdf';
 
 export default function About() {
 	return (
-		<Box id="about" as="section" layerStyle="sectionStyles" px="1rem">
+		<Box id="about" as="section" layerStyle="sectionStyles">
 			<Heading fontSize={['1.5rem', '2rem']} textAlign="center">
 				About me
 			</Heading>
