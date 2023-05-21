@@ -16,7 +16,7 @@ import cv from '../assets/docs/cv.pdf';
 
 export default function About() {
 	return (
-		<Box id="about" as="section" layerStyle="sectionStyles" px="1rem">
+		<Box id="about" as="section" layerStyle="sectionStyles">
 			<Heading fontSize={['1.5rem', '2rem']} textAlign="center">
 				About me
 			</Heading>
@@ -28,6 +28,7 @@ export default function About() {
 				templateColumns={[null, 'repeat(2, 1fr)']}
 				layerStyle="wrapper"
 				gap={['1.5rem', '0 5rem', '0 10rem']}
+				border="black 1px solid"
 			>
 				<Image
 					w={{ base: '200px', md: '300px' }}
