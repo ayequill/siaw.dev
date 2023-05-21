@@ -91,6 +91,7 @@ const NavigationBar: FC = () => {
 							<Link
 								layerStyle="navLinkStyles"
 								_hover={{ color: 'brand.primary' }}
+								href="#home"
 							>
 								<Icon as={FaHome} display={{ md: 'none' }} />
 								Home
@@ -100,6 +101,7 @@ const NavigationBar: FC = () => {
 						<Box as="li">
 							<Link
 								layerStyle="navLinkStyles"
+								href="#about"
 								_hover={{ color: 'brand.primary' }}
 							>
 								<Icon as={FaUser} display={{ md: 'none' }} />
@@ -111,6 +113,7 @@ const NavigationBar: FC = () => {
 							<Link
 								layerStyle="navLinkStyles"
 								_hover={{ color: 'brand.primary' }}
+								href="#skills"
 							>
 								<Icon as={FaFileCode} display={{ md: 'none' }} />
 								Skills
@@ -121,6 +124,7 @@ const NavigationBar: FC = () => {
 							<Link
 								layerStyle="navLinkStyles"
 								_hover={{ color: 'brand.primary' }}
+								href="#services"
 							>
 								<Icon as={FaBriefcase} display={{ md: 'none' }} />
 								Services
