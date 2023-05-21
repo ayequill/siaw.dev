@@ -4,6 +4,7 @@ import NavigationBar from './components/NavigationBar';
 import { Home } from './components/Home';
 import { Skills } from './components/Skills';
 import About from './components/About';
+import { Qualification } from './components/Qualification';
 export default function App() {
 	return (
 		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
@@ -12,6 +13,7 @@ export default function App() {
 			<Home />
 			<About />
 			<Skills />
+			<Qualification />
 		</ChakraProvider>
 	);
 }
