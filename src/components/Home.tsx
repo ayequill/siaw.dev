@@ -1,4 +1,5 @@
 import { Box, Grid, Heading, Icon, Link, Text } from '@chakra-ui/react';
+import { FC } from 'react';
 import {
 	FaArrowDown,
 	FaGithub,
@@ -8,7 +9,7 @@ import {
 	FaTwitter,
 } from 'react-icons/fa';
 
-export const Home = () => {
+export const Home: FC = () => {
 	return (
 		<Grid
 			as="section"
