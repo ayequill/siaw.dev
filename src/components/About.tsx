@@ -28,7 +28,6 @@ export default function About() {
 				templateColumns={[null, 'repeat(2, 1fr)']}
 				layerStyle="wrapper"
 				gap={['1.5rem', '0 5rem', '0 10rem']}
-				border="black 1px solid"
 			>
 				<Image
 					w={{ base: '200px', md: '300px' }}
