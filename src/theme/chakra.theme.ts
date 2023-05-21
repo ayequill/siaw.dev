@@ -61,6 +61,7 @@ export const theme = extendTheme({
 				fontSize: 'sm',
 				color: props.colorMode === 'dark' ? 'white' : 'gray.600',
 				lineHeight: 'tall',
+				scrollBehavior: 'smooth',
 				bg: props.colorMode === 'dark' ? 'black' : `hsl(${hue}, 60%, 99%)`,
 			},
 			a: {
