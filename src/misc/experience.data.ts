@@ -29,6 +29,13 @@ export const data: {
 			duration: '2022 - 2023',
 			shift: true,
 		},
+		{
+			id: 3,
+			title: 'ALX Software Engineering',
+			institute: 'ALX',
+			duration: '2023 - 2024',
+			shift: false,
+		},
 	],
 
 	work: [

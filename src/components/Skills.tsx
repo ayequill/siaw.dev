@@ -1,4 +1,4 @@
-import { Box, Grid, Icon, Heading, Text, Flex } from '@chakra-ui/react';
+import { Box, Icon, Heading, Text, Flex } from '@chakra-ui/react';
 import {
 	SiHtml5,
 	SiC,
@@ -14,7 +14,7 @@ import {
 
 export const Skills = () => {
 	return (
-		<Grid layerStyle="sectionStyles" id="skills">
+		<Box layerStyle="sectionStyles" id="skills">
 			<Heading fontSize={['1.5rem', '2rem']} textAlign="center">
 				Tech-Stack
 			</Heading>
@@ -89,6 +89,6 @@ export const Skills = () => {
 					</Text>
 				</Box>
 			</Flex>
-		</Grid>
+		</Box>
 	);
 };
