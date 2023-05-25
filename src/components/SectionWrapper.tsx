@@ -5,13 +5,5 @@ interface SectionProps {
 	children: ReactNode;
 }
 export const SectionWrapper = ({ children }: SectionProps) => {
-	return (
-		<Box
-			as="section"
-			p={{ base: '2rem 0 4rem' }}
-			// maxW={['767px', '1024px', '1400px']}
-		>
-			{children}
-		</Box>
-	);
+	return <Box layerStyle="wrapper">{children}</Box>;
 };
