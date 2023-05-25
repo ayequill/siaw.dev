@@ -26,7 +26,6 @@ export default function About() {
 			{/*ABout Container*/}
 			<Grid
 				templateColumns={[null, 'repeat(2, 1fr)']}
-				layerStyle="wrapper"
 				gap={['1.5rem', '0 5rem', '0 10rem']}
 			>
 				<Image
