@@ -7,6 +7,7 @@ import { Qualification } from './components/Qualification';
 import { Skills } from './components/Skills';
 import { theme } from './theme/chakra.theme';
 import { SectionWrapper } from './components/SectionWrapper';
+import Project from './components/Project';
 export default function App() {
 	return (
 		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
@@ -18,6 +19,7 @@ export default function App() {
 				<Skills />
 				<Qualification />
 				<Portfolio />
+				<Project />
 			</SectionWrapper>
 		</ChakraProvider>
 	);
