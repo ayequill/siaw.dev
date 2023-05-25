@@ -21,7 +21,7 @@ import { ColorModeSwitcher } from './ColorModeSwitcher';
 const NavigationBar: FC = () => {
 	const [isOpen, setOpen] = useState(false);
 
-	const navBg = useColorModeValue('brand.bodyColor', 'black');
+	const navBg = useColorModeValue('white', 'black');
 
 	const handleShowMenu = (): void => {
 		setOpen(!isOpen);
@@ -57,7 +57,8 @@ const NavigationBar: FC = () => {
 					fontSize="2xl"
 					fontWeight="bold"
 					// bgGradient="linear(to-l, brand.primary, brand.primaryDark)"
-					bgClip="text"
+					// bgClip="text"
+					color="brand.primary"
 				>
 					siaw.dev
 				</Link>
