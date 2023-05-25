@@ -48,7 +48,7 @@ export const theme = extendTheme({
 			// mr: '1.5rem',
 			// maxW: { base: '30em', md: '48em', lg: '62em', xl: '80em' },
 			w: [null, null, '90%'],
-			marginX: ['1.5rem', 'auto'],
+			marginX: ['0 auto', 'auto'],
 			// px: { base: '1rem', lg: '0.5rem' },
 		},
 	},
