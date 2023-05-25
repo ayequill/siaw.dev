@@ -17,7 +17,7 @@ export const Home: FC = () => {
 			layerStyle="sectionStyles"
 			gap={{ base: '1rem' }}
 		>
-			<Grid rowGap={{ md: '5rem' }} layerStyle="wrapper" gap="1rem">
+			<Grid rowGap={{ md: '5rem' }} gap="1rem">
 				<Grid
 					pt={{ base: '2.5rem', lg: '5.5rem' }}
 					columnGap={{ lg: 8 }}

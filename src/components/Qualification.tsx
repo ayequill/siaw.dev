@@ -30,7 +30,7 @@ const workElements = data.work.map(
 					</Box>
 				)}
 				<Box>
-					<Heading>{title}</Heading>
+					<Heading fontSize="2xl">{title}</Heading>
 					<Box as="span" mb={4}>
 						<Text>{institute}</Text>
 					</Box>
@@ -92,7 +92,7 @@ const educationElements = data.education.map(
 					</Box>
 				)}
 				<Box>
-					<Heading>{title}</Heading>
+					<Heading fontSize="2xl">{title}</Heading>
 					<Box as="span" mb={4}>
 						<Text>{institute}</Text>
 					</Box>
@@ -141,7 +141,7 @@ export const Qualification = () => {
 				My Journey
 			</Text>
 			{/*Container*/}
-			<Grid layerStyle="wrapper">
+			<Grid>
 				<Flex justifyContent="space-evenly" mb={8}>
 					<Box
 						fontSize="1.2rem"

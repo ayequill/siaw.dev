@@ -2,7 +2,7 @@ import { extendTheme } from '@chakra-ui/react';
 import '@fontsource/sen';
 import { linkTheme } from './button.custom';
 
-const hue = 120;
+const hue = 240;
 export const theme = extendTheme({
 	fonts: {
 		body: 'Sen, sans-serif',
@@ -15,7 +15,7 @@ export const theme = extendTheme({
 			textSecondary: `hsl(${hue}, 8%, 65%)`,
 			bodyColor: `hsl(${hue}, 60%, 99%)`,
 			bodyColorDark: `hsl(${hue}, 28%, 12%)`,
-			linear: `linear-gradient(90deg, hsla(${hue}, 57%, 40%, 1) 40%, hsla(${hue}, 69%, 61%, 1) 100%)`,
+			linear: `linear-gradient(90deg, hsla(${hue}, 69%, 61%, 1)60% , hsla(${hue}, 57%, 40%, 1) 100%)`,
 			primaryDark: `hsla(${hue}, 57%, 40%)`,
 		},
 	},
@@ -37,7 +37,7 @@ export const theme = extendTheme({
 			padding: { base: '2rem 1rem 4rem', md: '3rem 6rem', lg: '3rem 6rem' },
 			marginBottom: { md: '3rem', lg: '3rem' },
 			minH: { lg: '80vmin' },
-			marginX: ['1.5rem', 'auto'],
+			// marginX: ['1.5rem', 'auto'],
 		},
 		pages: {
 			gap: '1.5em',
@@ -47,8 +47,8 @@ export const theme = extendTheme({
 			// marginX: { base: '1.5rem', md: 'auto' },
 			// mr: '1.5rem',
 			// maxW: { base: '30em', md: '48em', lg: '62em', xl: '80em' },
-			// w: '100%',
-			// marginX: ['1.5rem', 'auto'],
+			w: [null, null, '90%'],
+			marginX: ['1.5rem', 'auto'],
 			// px: { base: '1rem', lg: '0.5rem' },
 		},
 	},
@@ -62,7 +62,7 @@ export const theme = extendTheme({
 				color: props.colorMode === 'dark' ? 'white' : 'gray.600',
 				lineHeight: 'tall',
 				scrollBehavior: 'smooth',
-				bg: props.colorMode === 'dark' ? 'black' : `hsl(${hue}, 60%, 99%)`,
+				bg: props.colorMode === 'dark' ? 'black' : 'white',
 			},
 			a: {
 				color: props.colorMode === 'dark' ? 'teal.300' : 'teal.500',
