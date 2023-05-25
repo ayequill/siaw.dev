@@ -14,7 +14,6 @@ import { FaArrowRight, FaGithub } from 'react-icons/fa';
 
 const Portfolio: FC = () => {
 	const itemBg = useColorModeValue('brand.bodyColor', 'blackAlpha.400');
-	const textColor = useColorModeValue('white', 'white');
 
 	const portfolioItems = portfolioData.map(
 		(
