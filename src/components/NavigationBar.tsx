@@ -30,7 +30,7 @@ const NavigationBar: FC = () => {
 		<Box
 			as="header"
 			w="100%"
-			pos="fixed"
+			pos={['fixed', null, 'unset']}
 			bottom={[0, null, 'initial']}
 			// top={[null, null, '0']}
 			// left={[null, null, '0']}
@@ -47,9 +47,9 @@ const NavigationBar: FC = () => {
 				as="nav"
 				alignItems="center"
 				justifyContent="space-between"
-				h={['3rem', null, '4rem']}
+				h={['3.5rem', null, '4rem']}
 				columnGap={{ md: '1rem' }}
-				w={{ base: '100%', lg: '80%' }}
+				w={{ base: '100%', lg: '90%' }}
 			>
 				<Link
 					_hover={{ color: 'brand.primary' }}
@@ -87,6 +87,7 @@ const NavigationBar: FC = () => {
 						gridTemplateColumns="repeat(3,1fr)"
 						gap={['1.5rem', null, '2rem']}
 						justifyContent={{ md: 'end' }}
+						fontSize="1rem"
 					>
 						<Box as="li">
 							<Link
@@ -164,7 +165,7 @@ const NavigationBar: FC = () => {
 						aria-label="Toggle menu"
 						icon={<FaBars />}
 						onClick={handleShowMenu}
-						// fontSize="1.25rem"
+						fontSize="1.25rem"
 						mb="1"
 						variant="unstyled"
 						display={{ base: 'flex', md: 'none' }}
