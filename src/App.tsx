@@ -8,9 +8,9 @@ import { Skills } from './components/Skills';
 import { theme } from './theme/chakra.theme';
 import { SectionWrapper } from './components/SectionWrapper';
 import Project from './components/Project';
+import Contact from './components/ContactForm';
 export default function App() {
 	return (
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 		<ChakraProvider theme={theme} resetCSS>
 			<NavigationBar />
 			<SectionWrapper>
@@ -20,6 +20,7 @@ export default function App() {
 				<Qualification />
 				<Portfolio />
 				<Project />
+				<Contact />
 			</SectionWrapper>
 		</ChakraProvider>
 	);

@@ -13,6 +13,8 @@ export const theme = extendTheme({
 			secondary: `hsl(${hue}, 57%, 53%)`,
 			text: `hsl(${hue}, 8%, 45%)`,
 			textSecondary: `hsl(${hue}, 8%, 65%)`,
+			inputColor: `hsl(${hue}, 70%, 96%)`,
+			titleColor: `hsl(${hue}, 8%, 15%)`,
 			bodyColor: `hsl(${hue}, 60%, 99%)`,
 			bodyColorDark: `hsl(${hue}, 28%, 12%)`,
 			linear: `linear-gradient(90deg, hsla(${hue}, 69%, 61%, 1)60% , hsla(${hue}, 57%, 40%, 1) 100%)`,
@@ -34,7 +36,7 @@ export const theme = extendTheme({
 			flexDir: 'column',
 		},
 		sectionStyles: {
-			padding: { base: '2rem 1rem 4rem', md: '3rem 6rem', lg: '3rem 6rem' },
+			padding: ['2rem 1rem 4rem', '2rem 2rem', '3rem 6rem'],
 			marginBottom: { md: '3rem', lg: '3rem' },
 			minH: { lg: '80vmin' },
 			// marginX: ['1.5rem', 'auto'],
