@@ -102,7 +102,7 @@ const Portfolio: FC = () => {
 		}
 	);
 	return (
-		<Box as="section" layerStyle="sectionStyles">
+		<Box as="section" layerStyle="sectionStyles" id="portfolio">
 			<Heading fontSize={['1.5rem', '2rem']} textAlign="center">
 				Portfolio
 			</Heading>
