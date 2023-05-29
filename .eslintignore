@@ -1,2 +1,6 @@
 build
-*ts
+/src/setupTests.ts
+/src/serviceWorker.ts
+/src/test-utils.tsx
+/src/reportWebVitals.ts
+/src/react-app-env.d.ts
