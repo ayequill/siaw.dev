@@ -17,13 +17,7 @@ import {
 } from '@chakra-ui/react';
 export default function Contact() {
 	return (
-		<Box
-			as="section"
-			className="contact section"
-			id="contact"
-			layerStyle="sectionStyles"
-			mb="3rem"
-		>
+		<Box as="section" id="contact" layerStyle="sectionStyles" mb="3rem">
 			<Heading fontSize={['1.5rem', '2rem']} textAlign="center">
 				Contact Me
 			</Heading>
@@ -47,12 +41,7 @@ export default function Contact() {
 						</Box>
 					</Flex>
 
-					<Flex
-						mb={8}
-						className="contact__information"
-						alignItems="center"
-						gap="0.2rem"
-					>
+					<Flex mb={8} alignItems="center" gap="0.2rem">
 						<Icon
 							as={FaEnvelope}
 							fontSize="3xl"
@@ -87,7 +76,6 @@ export default function Contact() {
 					gap={['1.5rem']}
 					name="contact__form"
 					method="POST"
-					className="contact__form grid"
 					width={[null, null, '460px']}
 				>
 					<input type="hidden" name="form-name" value="contact__form" />
@@ -97,11 +85,7 @@ export default function Contact() {
 							borderRadius=".5rem"
 							p={['0.75rem 1rem 0.25rem']}
 						>
-							<label
-								color="brand.titleColor"
-								htmlFor="name"
-								className="contact__label"
-							>
+							<label color="brand.titleColor" htmlFor="name">
 								Name:{' '}
 							</label>
 							<Input
@@ -114,20 +98,14 @@ export default function Contact() {
 								type="text"
 								name="name"
 								focusBorderColor="none"
-								className="contact__input"
 							/>
 						</Box>
 						<Box
-							className="contact__content"
 							bg="brand.inputColor"
 							borderRadius=".5rem"
 							p={['0.75rem 1rem 0.25rem']}
 						>
-							<label
-								color="brand.titleColor"
-								htmlFor="email"
-								className="contact__label"
-							>
+							<label color="brand.titleColor" htmlFor="email">
 								Email:{' '}
 							</label>
 							<Input
@@ -139,7 +117,6 @@ export default function Contact() {
 								p={['0.25rem 0.5rem .5rem 0']}
 								type="email"
 								name="email"
-								className="contact__input"
 							/>
 						</Box>
 					</Grid>
@@ -149,11 +126,7 @@ export default function Contact() {
 						borderRadius=".5rem"
 						p={['0.75rem 1rem 0.25rem']}
 					>
-						<label
-							color="brand.titleColor"
-							htmlFor="project"
-							className="contact__label"
-						>
+						<label color="brand.titleColor" htmlFor="project">
 							Project{' '}
 						</label>
 						<Input
@@ -165,20 +138,14 @@ export default function Contact() {
 							p={['0.25rem 0.5rem .5rem 0']}
 							type="text"
 							name="project"
-							className="contact__input"
 						/>
 					</Box>
 					<Box
-						className="contact__content"
 						bg="brand.inputColor"
 						borderRadius=".5rem"
 						p={['0.75rem 1rem 0.25rem']}
 					>
-						<label
-							color="brand.titleColor"
-							htmlFor=""
-							className="contact__label"
-						>
+						<label color="brand.titleColor" htmlFor="">
 							Message{' '}
 						</label>
 						<Textarea
@@ -192,8 +159,6 @@ export default function Contact() {
 							id=""
 							cols={0}
 							rows={7}
-							// size="xs"
-							className="contact__input"
 						></Textarea>
 					</Box>
 
@@ -212,7 +177,6 @@ export default function Contact() {
 							alignItems="center"
 							boxShadow="lg"
 							// href="#contact"
-							className="button button button--flex"
 						>
 							Send Message
 							<FaRegPaperPlane className="button__icon" />

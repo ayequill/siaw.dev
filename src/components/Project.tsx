@@ -16,17 +16,12 @@ export default function Project() {
 			>
 				<Box>
 					<Grid
-						className="project__container container grid"
 						gap={['1.5em', null, '0 3rem']}
 						// p={[null, '3rem 2.5rem 0']}
 						gridTemplateColumns={[null, 'repeat(2,1fr)']}
 						alignContent="center"
 					>
-						<Box
-							color="white"
-							pt={[null, null, '0.8rem']}
-							className="project__data"
-						>
+						<Box color="white" pt={[null, null, '0.8rem']}>
 							<Text fontSize="2rem" mb=".75rem">
 								{' '}
 								Got a new project in mind?
