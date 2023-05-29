@@ -137,6 +137,7 @@ const NavigationBar: FC = () => {
 							<Link
 								layerStyle="navLinkStyles"
 								_hover={{ color: 'brand.primary' }}
+								href="#portfolio"
 							>
 								<Icon as={FaYinYang} display={{ md: 'none' }} />
 								Portfolio
@@ -147,6 +148,7 @@ const NavigationBar: FC = () => {
 							<Link
 								layerStyle="navLinkStyles"
 								_hover={{ color: 'brand.primary' }}
+								id="#contact"
 							>
 								<Icon as={FaRegPaperPlane} display={{ md: 'none' }} />
 								Contact

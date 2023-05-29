@@ -36,7 +36,7 @@ export const theme = extendTheme({
 			flexDir: 'column',
 		},
 		sectionStyles: {
-			padding: ['2rem 1rem 4rem', '2rem 2rem', '3rem 6rem'],
+			padding: ['2rem 1rem 4rem', '2rem 2rem', '3rem 2rem'],
 			marginBottom: { md: '3rem', lg: '3rem' },
 			minH: { lg: '80vmin' },
 			// marginX: ['1.5rem', 'auto'],

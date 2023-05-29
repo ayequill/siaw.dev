@@ -25,10 +25,10 @@ export default function Contact() {
 			mb="3rem"
 		>
 			<Heading fontSize={['1.5rem', '2rem']} textAlign="center">
-				Portfolio
+				Contact Me
 			</Heading>
 			<Text fontSize="xl" mb={[12, 16]} textAlign="center">
-				My Recent Works
+				Get in touch
 			</Text>
 			<Grid gap="1.5rem" gridTemplateColumns={[null, 'repeat(2,1fr)']}>
 				<Box>
