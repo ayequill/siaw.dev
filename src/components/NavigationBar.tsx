@@ -32,8 +32,6 @@ const NavigationBar: FC = () => {
 			w="100%"
 			pos={['fixed', null, 'unset']}
 			bottom={[0, null, 'initial']}
-			// top={[null, null, '0']}
-			// left={[null, null, '0']}
 			zIndex="1000"
 			p={{ base: '0.4rem 1rem', md: '0 2rem' }}
 			columnGap={[null, null, '1rem']}
@@ -41,7 +39,6 @@ const NavigationBar: FC = () => {
 			display={{ md: 'flex' }}
 			bgColor={navBg}
 			boxShadow="inner"
-			// mx={{ md: '1.5rem' }}
 		>
 			<Flex
 				as="nav"
