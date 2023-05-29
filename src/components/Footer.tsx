@@ -80,7 +80,6 @@ export default function Footer() {
 							rel="noreferrer"
 							href="http://twitter.com/ayequill"
 							mr="1.5rem"
-							className="footer__social"
 						>
 							<Icon as={FaTwitter} />
 						</Link>
