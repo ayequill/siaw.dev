@@ -9,6 +9,7 @@ import { theme } from './theme/chakra.theme';
 import { SectionWrapper } from './components/SectionWrapper';
 import Project from './components/Project';
 import Contact from './components/ContactForm';
+import Footer from './components/Footer';
 export default function App() {
 	return (
 		<ChakraProvider theme={theme} resetCSS>
@@ -22,6 +23,7 @@ export default function App() {
 				<Project />
 				<Contact />
 			</SectionWrapper>
+			<Footer />
 		</ChakraProvider>
 	);
 }
