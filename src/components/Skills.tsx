@@ -10,6 +10,9 @@ import {
 	SiSass,
 	SiTypescript,
 	SiDocker,
+	SiPython,
+	SiShell,
+	SiGnubash,
 } from 'react-icons/si';
 
 export const Skills = () => {
@@ -40,16 +43,16 @@ export const Skills = () => {
 						javascript
 					</Text>
 				</Box>
-				<Box borderBottom="3px solid #E34F26">
-					<Icon as={SiHtml5} fontSize={'6rem'} color="#E34F26" />
-					<Text textAlign="center" borderTop="3px solid #E34F26">
-						html
+				<Box borderBottom="3px solid #3570a0">
+					<Icon as={SiPython} fontSize={'6rem'} color="#ffd94a" />
+					<Text textAlign="center" borderTop="3px solid #3570a0">
+						python
 					</Text>
 				</Box>
-				<Box borderBottom="3px solid #CC6699">
-					<Icon as={SiSass} fontSize={'6rem'} color="#CC6699" />
-					<Text textAlign="center" borderTop="3px solid #CC6699">
-						scss
+				<Box borderBottom="3px solid #31b644">
+					<Icon as={SiGnubash} fontSize={'6rem'} color="#2d3a3e" />
+					<Text textAlign="center" borderTop="3px solid #31b644">
+						bash
 					</Text>
 				</Box>
 				<Box borderBottom="3px solid #61DAFB">
@@ -62,6 +65,18 @@ export const Skills = () => {
 					<Icon as={SiC} fontSize={'6rem'} color="#A8B9CC" />
 					<Text textAlign="center" borderTop="3px solid #A8B9CC">
 						C
+					</Text>
+				</Box>
+				<Box borderBottom="3px solid #E34F26">
+					<Icon as={SiHtml5} fontSize={'6rem'} color="#E34F26" />
+					<Text textAlign="center" borderTop="3px solid #E34F26">
+						html
+					</Text>
+				</Box>
+				<Box borderBottom="3px solid #CC6699">
+					<Icon as={SiSass} fontSize={'6rem'} color="#CC6699" />
+					<Text textAlign="center" borderTop="3px solid #CC6699">
+						scss
 					</Text>
 				</Box>
 				<Box borderBottom="3px solid #3178C6">
