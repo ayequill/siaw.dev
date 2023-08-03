@@ -2,7 +2,7 @@ import { extendTheme } from '@chakra-ui/react';
 import '@fontsource/sen';
 import { linkTheme } from './button.custom';
 
-const hue = 240;
+const hue = 30;
 export const theme = extendTheme({
 	fonts: {
 		body: 'Sen, sans-serif',
