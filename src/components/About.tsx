@@ -9,7 +9,7 @@ import {
 	Flex,
 } from '@chakra-ui/react';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
-import avatar from '../assets/me.jpeg';
+import avatar from '../assets/me.webp';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import cv from '../assets/docs/cv.pdf';
