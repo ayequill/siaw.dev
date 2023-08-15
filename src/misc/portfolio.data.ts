@@ -38,7 +38,7 @@ export const portfolioData: PortfolioItem[] = [
 	{
 		title: 'IP Address Tracker',
 		desc: 'This is a web application built using React and TypeScript that allows users to track the geographical location of an IP address. It utilizes the Leaflet library for interactive maps and makes API calls to IPify for retrieving IP address data.',
-		demoUrl: 'https://ip-tracker.siaw.dev',
+		demoUrl: 'https://iptracker.siaw.dev',
 		repoUrl: 'https://github.com/ayequill/Ip-adress-tracker-with-react',
 		desktopImgSrc: ipTrackerDesk,
 		mobileImgSrc: ipTrackerMob,
@@ -47,7 +47,7 @@ export const portfolioData: PortfolioItem[] = [
 	{
 		title: 'Movie Library WebApp',
 		desc: 'A movie collection Website adaptable to all devices, developed with TheMovieDB API.',
-		demoUrl: 'https://movie-lib.siaw.dev',
+		demoUrl: 'https://movielibrary.siaw.dev',
 		repoUrl: 'https://github.com/ayequill/movie-library',
 		desktopImgSrc: movieLibdesk,
 		mobileImgSrc: movieLibMob,

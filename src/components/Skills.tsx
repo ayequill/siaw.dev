@@ -11,7 +11,6 @@ import {
 	SiTypescript,
 	SiDocker,
 	SiPython,
-	SiShell,
 	SiGnubash,
 } from 'react-icons/si';
 
