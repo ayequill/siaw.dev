@@ -9,8 +9,7 @@ jobs:
     steps:
       - checkout
 
-      - node/install-packages:
-          cache-key: v1-deps-{{ checksum "package.json" }}
+      - node/install-packages
 
       - run:
           name: Code Linting
@@ -21,8 +20,7 @@ jobs:
     steps:
       - checkout
 
-      - node/install-packages:
-          cache-key: v1-deps-{{ checksum "package.json" }}
+      - node/install-packages
 
       - run:
           name: App Testing
