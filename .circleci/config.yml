@@ -1,0 +1,36 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.1.0
+
+jobs:
+  linting:
+    executor: node/default
+    steps:
+      - checkout
+
+      - node/install-packages
+
+      - run:
+          name: Code Linting
+          command: npm run lint
+
+  testing:
+    executor: node/default
+    steps:
+      - checkout
+
+      - node/install-packages
+
+      - run:
+          name: App Testing
+          command: npm test
+
+workflows:
+  version: 2
+  lint_test:
+    jobs:
+      - linting:
+          context: org-global
+      - testing:
+          context: org-global
