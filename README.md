@@ -1,3 +1,5 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ayequill/portfolio-website__v2/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ayequill/portfolio-website__v2/tree/main)
+
 # My Portfolio Website
 
 This repository contains the source code for my personal portfolio website. The website showcases the my skills, qualifications, projects, and contact information.
