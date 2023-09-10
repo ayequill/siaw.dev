@@ -50,7 +50,7 @@ const NavigationBar: FC = () => {
 			>
 				<Link
 					_hover={{ color: 'brand.primary' }}
-					href="#home"
+					href="/"
 					fontSize="2xl"
 					fontWeight="bold"
 					// bgGradient="linear(to-l, brand.primary, brand.primaryDark)"
@@ -90,7 +90,7 @@ const NavigationBar: FC = () => {
 							<Link
 								layerStyle="navLinkStyles"
 								_hover={{ color: 'brand.primary' }}
-								href="#home"
+								href="/"
 							>
 								<Icon as={FaHome} display={{ md: 'none' }} />
 								Home
@@ -100,7 +100,7 @@ const NavigationBar: FC = () => {
 						<Box as="li">
 							<Link
 								layerStyle="navLinkStyles"
-								href="#about"
+								href="about"
 								_hover={{ color: 'brand.primary' }}
 							>
 								<Icon as={FaUser} display={{ md: 'none' }} />
@@ -112,7 +112,7 @@ const NavigationBar: FC = () => {
 							<Link
 								layerStyle="navLinkStyles"
 								_hover={{ color: 'brand.primary' }}
-								href="#skills"
+								href="skills"
 							>
 								<Icon as={FaFileCode} display={{ md: 'none' }} />
 								Skills
@@ -134,7 +134,7 @@ const NavigationBar: FC = () => {
 							<Link
 								layerStyle="navLinkStyles"
 								_hover={{ color: 'brand.primary' }}
-								href="#portfolio"
+								href="portfolio"
 							>
 								<Icon as={FaYinYang} display={{ md: 'none' }} />
 								Portfolio
@@ -145,7 +145,7 @@ const NavigationBar: FC = () => {
 							<Link
 								layerStyle="navLinkStyles"
 								_hover={{ color: 'brand.primary' }}
-								id="#contact"
+								href="contact"
 							>
 								<Icon as={FaRegPaperPlane} display={{ md: 'none' }} />
 								Contact
