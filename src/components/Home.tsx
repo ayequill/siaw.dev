@@ -74,7 +74,7 @@ export const Home: FC = () => {
 						</Text>
 						<Link
 							variant="brandPrimary"
-							href="#contact"
+							href="contact"
 							// icon={<FaPaperPlane />}
 							// _hover={{ textDecoration: 'none' }}
 						>
@@ -85,7 +85,7 @@ export const Home: FC = () => {
 				</Grid>
 				<Box>
 					<Link
-						href="#about"
+						href="about"
 						display="inline-flex"
 						alignItems="center"
 						columnGap="0.3em"

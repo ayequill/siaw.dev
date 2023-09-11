@@ -39,6 +39,7 @@ export const theme = extendTheme({
 			alignItems: 'center',
 			display: 'flex',
 			flexDir: 'column',
+			fontSize: '1.3rem',
 		},
 		sectionStyles: {
 			padding: ['2rem 1rem 4rem', '2rem 2rem', '3rem 2rem'],
@@ -56,6 +57,7 @@ export const theme = extendTheme({
 			// maxW: { base: '30em', md: '48em', lg: '62em', xl: '80em' },
 			w: [null, null, '80%'],
 			marginX: ['0 auto', 'auto'],
+			marginY: ['2rem', '4rem'],
 			// px: { base: '1rem', lg: '0.5rem' },
 		},
 	},
