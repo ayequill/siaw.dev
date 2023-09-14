@@ -1,4 +1,4 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ayequill/siaw.dev/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ayequill/portfolio-website__v2/tree/main)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ayequill/siaw.dev/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ayequill/siaw.dev/tree/main)
 
 # My Portfolio Website
 
